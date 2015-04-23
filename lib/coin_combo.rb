@@ -22,10 +22,10 @@ until input==(0)
     nickel = var3.floor()
     input = input.-(nickel.*(5))
   elsif input.>=1
-    penny = input./(1)
+    penny = input
     input = input.-(penny.*(1))
   end
 end
-return [quarter, dime, nickel, penny]
+return [(quarter.to_s).concat(" quarters"), (dime.to_s).concat(" dimes"), (nickel.to_s).concat(" nickels"), (penny.to_s).concat(" pennies")]
 end
 end
