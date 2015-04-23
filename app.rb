@@ -1,6 +1,6 @@
 require('sinatra')
 require('sinatra/reloader')
-require('coin_combo')
+require('./lib/coin_combo')
 also_reload('lib/**/*.rb')
 
 get('/') do
